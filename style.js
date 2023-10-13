@@ -40,7 +40,7 @@ function check() {
             }
     else {
         output.innerText ="Incorrect " ;
-        input.value=" " 
+        input.value= " " 
     }
   
 
