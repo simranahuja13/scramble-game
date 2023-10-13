@@ -2,7 +2,7 @@
 
 Welcome to the Scramble Game! This web-based word puzzle game is built using Tailwind CSS, HTML, and JavaScript.
 
-#Live link : simran-portfolio-scramblegame.netlify.app
+## Live link : simran-portfolio-scramblegame.netlify.app
 ## Gameplay 😍
 
 The objective of the game is to unscramble a set of jumbled letters to form a valid word.
