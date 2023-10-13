@@ -36,10 +36,11 @@ function check() {
         displayWord.toLocaleLowerCase()
         ) {
         output.innerText ="Correct "
-        input.value=" "
+       
             }
     else {
-        output.innerText ="Incorrect "  
+        output.innerText ="Incorrect " ;
+        input.value=" " 
     }
   
 
