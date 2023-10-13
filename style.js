@@ -22,6 +22,7 @@ function shuffle(str) {
         // console.log(temp)
     }
     return strArr.join(' ');
+      
 }
 // shuffle(words)
 
@@ -29,29 +30,38 @@ function shuffle(str) {
 function check() {
     let input = document.getElementById('input');
     let output = document.getElementById('output');
+    
     if (
         input.value.toLocaleLowerCase() === 
         displayWord.toLocaleLowerCase()
         ) {
         output.innerText ="Correct "
-        input.value = " " ;
-        }
-    else output.innerText ="Incorrect "
+        input.value=" "
+            }
+    else {
+        output.innerText ="Incorrect "  
+    }
+  
 
+    
 }
 
 // To refresh and show new word
 function refresh() {
+   
     index = Math.floor(Math.random() * 5);
     displayWord = words[index];
     console.log(displayWord);
     displayHint = hints[index];
+ 
+    
     scrambledWord = document.getElementById('scrambled-word');
     scrambledWord.innerText =
         shuffle(displayWord).toUpperCase();
     let hint = document.getElementById('hint');
     hint.innerText = displayHint;
     document.getElementById('output').innerText = " "
+  
     
 }
 
